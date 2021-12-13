@@ -1,7 +1,18 @@
+import Header from './Components/Header'
+import Footer from './Components/Footer'
+import { Container } from 'react-bootstrap'
+import HomeScreen from './screens/HomeScreen'
+
 const App = () => {
   return (
     <>
-      <h1>Welcome SK</h1>
+      <Header />
+      <main className='py-3'>
+        <Container>
+          <HomeScreen />
+        </Container>
+      </main>
+      <Footer />
     </>
   )
 }
